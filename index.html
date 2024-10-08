@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="faicon/apple-icon-72x72.png"
+      type="image/x-icon"
+    />
+    <title>Douceur d’Orient</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navPhone">
+          <div class="logoName">
+            <a href="#">
+              <img src="img/logo2.png" alt="logo" />
+              <strong>douceur d’orient</strong>
+            </a>
+          </div>
+          <label for="menu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </label>
+          <input type="checkbox" id="menu" />
+          <div class="slide">
+            <div class="closeMenu">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <span class="MenuTitle">menu</span>
+            <ul>
+              <li>
+                <a href="#"
+                  ><span class="icon"
+                    ><i class="fa fa-home" aria-hidden="true"></i
+                  ></span>
+                  <span class="name">accueil</span>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><span class="icon"
+                    ><i class="fa fa-user" aria-hidden="true"></i
+                  ></span>
+
+                  <span class="name">connexion</span>
+                </a>
+              </li>
+              <li onclick="newslatter(event)">
+                <a href=""
+                  ><span class="icon"
+                    ><i class="fa fa-envelope-o" aria-hidden="true"></i
+                  ></span>
+
+                  <span class="name">newsletter</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon"
+                    ><i class="fa fa-address-book" aria-hidden="true"></i
+                  ></span>
+                  <span class="name">contact</span>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><span class="icon"
+                    ><i class="fa fa-heart" aria-hidden="true"></i
+                  ></span>
+                  <span class="name">favories</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="active">
+                  <span class="name">chocolats</span>
+                </a>
+              </li>
+              <li>
+                <a href="html/galerie.html" class="active">
+                  <span class="name">produits</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="" class="active">
+                  <span class="name">cadeaux</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="navPc">
+          <div class="menu1">
+            <div class="logoName">
+              <a href="#">
+                <img src="img/logo2.png" alt="logo" />
+                <strong>douceur d’orient</strong>
+              </a>
+            </div>
+            <ul class="ul1">
+              <li><a href="#">accueil</a></li>
+              <li><a href="#">connexion</a></li>
+              <li onclick="newslatter(event)"><a href="#">newsletter</a></li>
+              <li><a href="#">contact</a></li>
+              <li><a href="#">favories</a></li>
+              <li>
+                chocolats
+                <ul class="ul2">
+                  <li>
+                    one
+                    <ul class="ul3">
+                      <li><a href="">one 1</a></li>
+                      <li><a href="">one 2</a></li>
+                      <li><a href="">one 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="">two</a>
+                    <ul class="ul3">
+                      <li>
+                        two 1
+                        <ul class="ul4">
+                          <li><a href="">two 11</a></li>
+                          <li><a href="">two 12</a></li>
+                          <li><a href="">two 13</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="">two 2</a></li>
+                      <li><a href="">two 3</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">tree</a>
+                    <ul class="ul3">
+                      <li><a href="">tree 1</a></li>
+                      <li><a href="">tree 2</a></li>
+                      <li><a href="">tree 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a href="">four</a></li>
+                </ul>
+              </li>
+
+              <li><a href="html/galerie.html">produits</a></li>
+
+              <li><a href="#">cadeaux</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="sliderPrincipale">
+        <ul class="conteneur">
+          <li>
+            <a href="#">
+              <img src="img/slider/slider1.jpeg" alt="slider 1" />
+              <div class="info">
+                <h1 class="grandTitre">collection de pâques 1</h1>
+                <p class="linkStyle1">
+                  Faites plaisir à coup sûr: Découvrez nos coffrets cadeaux
+                </p>
+                <p class="linkStyle2">
+                  Douceur d'Orient, une chocolaterie artisanale belge, célèbre
+                  l'union raffinée entre l'héritage chocolatier belge et les
+                  saveurs enchanteresses de l'Orient.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/slider/slider2.jpeg" alt="slider 2" />
+              <div class="info">
+                <div class="grandTitre">collection de pâques 2</div>
+                <p class="linkStyle1">
+                  Faites plaisir à coup sûr: Découvrez nos coffrets cadeaux
+                </p>
+                <p class="linkStyle2">
+                  Notre entreprise incarne une expérience sensorielle
+                  exceptionnelle, se dédiant à la préservation et à la promotion
+                  du savoir- faire chocolatier belge,tout en invitant nos
+                  clients à s'évader dans unmonde de délicesimprégné
+                  d'influences orientales
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/slider/slider3.jpeg" alt="slider 3" />
+              <div class="info">
+                <div class="grandTitre">collection de pâques 3</div>
+                <p class="linkStyle1">
+                  Faites plaisir à coup sûr: Découvrez nos coffrets cadeaux
+                </p>
+                <p class="linkStyle2">
+                  Nouss ommes bien plus qu'une chocolaterie, noussommes un pont
+                  entre deux mondes, unissant le patrimoine belge et les
+                  traditions orientales.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/slider/slider4.jpeg" alt="slider 4" />
+              <div class="info">
+                <div class="grandTitre">collection de pâques 4</div>
+                <p class="linkStyle1">
+                  Faites plaisir à coup sûr: Découvrez nos coffrets cadeaux
+                </p>
+                <p class="linkStyle2">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus pariatur, nesciunt nemo dolores placeat, ab
+                  voluptas reiciendis iusto officia corrupti sequi molestias,
+                  doloremque debitis iure dignissimos soluta aliquid nisi quod.
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="navigation">
+          <ul>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div id="newslatterOverlay">
+        <div class="newslatterContentClose">
+          <i
+            class="fa fa-times-circle"
+            onclick="newslatter(event)"
+            aria-hidden="true"
+          ></i>
+          <div class="newslatterContent">
+            <h4>Enregistrement à la newsletter</h4>
+
+            <form action="newslatter.php" method="post">
+              <input
+                type="text"
+                name="newslatter"
+                placeholder="Votre adresse e-mail"
+              /><br />
+              <input type="submit" value="S'abonner" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="produits">
+        <h2>nos nouveautés</h2>
+        <span class="aside">livraison gratuite</span>
+        <div class="background">
+          <div class="container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Slide-start -->
+                <div class="slide" data-light="third">
+                  <a href="https://lien1.com">
+                    <img src="img/produits/produit1.jpg" alt="Produit 1" />
+                    <div class="slide-content">
+                      <span class="price">20 €</span>
+                      <div class="slide-content-bottom">
+                        <h3 class="name">pralines</h3>
+                        <div class="slide-description">
+                          <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Laudantium, enim consectetur adipisicing elit.
+                            Laudantium, enim consectetur adipisicing elit.
+                            Laudantium, enim...
+                          </p>
+                          <div class="rating">
+                            <span>4.5</span>
+                            <div class="star">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="slide" data-light="second">
+                  <a href="https://lien1.com">
+                    <img src="img/produits/produit2.jpg" alt="Produit 2" />
+                    <div class="slide-content">
+                      <span class="price">30 €</span>
+                      <div class="slide-content-bottom">
+                        <h3 class="name">macarons</h3>
+                        <div class="slide-description">
+                          <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Laudantium, enim consectetur adipisicing elit.
+                            Laudantium, enim consectetur adipisicing elit.
+                            Laudantium, enim...
+                          </p>
+                          <div class="rating">
+                            <span>4.5</span>
+                            <div class="star">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="slide active" data-light="first">
+                  <a href="https://lien1.com">
+                    <img src="img/produits/produit3.jpg" alt="Produit 3" />
+                    <div class="slide-content">
+                      <span class="price">25 €</span>
+                      <div class="slide-content-bottom">
+                        <h3 class="name">pâtes à tartiner</h3>
+                        <div class="slide-description">
+                          <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Laudantium, enim consectetur adipisicing elit.
+                            Laudantium, enim consectetur adipisicing elit.
+                            Laudantium, enim...
+                          </p>
+                          <div class="rating">
+                            <span>4.5</span>
+                            <div class="star">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="slide" data-light="second">
+                  <a href="https://lien1.com">
+                    <img src="img/produits/produit4.jpg" alt="Produit 4" />
+                    <div class="slide-content">
+                      <span class="price">10 €</span>
+                      <div class="slide-content-bottom">
+                        <h3 class="name">truffes au chocolat</h3>
+                        <div class="slide-description">
+                          <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Laudantium, enim consectetur adipisicing elit.
+                            Laudantium, enim consectetur adipisicing elit.
+                            Laudantium, enim...
+                          </p>
+                          <div class="rating">
+                            <span>4.5</span>
+                            <div class="star">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="slide" data-light="third">
+                  <a href="https://lien1.com">
+                    <img src="img/produits/produit5.jpg" alt="Produit 5" />
+                    <div class="slide-content">
+                      <span class="price">20 €</span>
+                      <div class="slide-content-bottom">
+                        <h3 class="name">la box</h3>
+                        <div class="slide-description">
+                          <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Laudantium, enim consectetur adipisicing elit.
+                            Laudantium, enim consectetur adipisicing elit.
+                            Laudantium, enim...
+                          </p>
+                          <div class="rating">
+                            <span>4.5</span>
+                            <div class="star">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="slide" data-light="fourth">
+                  <a href="https://lien1.com">
+                    <img src="img/produits/produit6.jpg" alt="Produit 6" />
+                    <div class="slide-content">
+                      <span class="price">23 €</span>
+                      <div class="slide-content-bottom">
+                        <h3 class="name">pralines</h3>
+                        <div class="slide-description">
+                          <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Laudantium, enim consectetur adipisicing elit.
+                            Laudantium, enim consectetur adipisicing elit.
+                            Laudantium, enim...
+                          </p>
+                          <div class="rating">
+                            <span>4.5</span>
+                            <div class="star">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Slide-end -->
+              </div>
+              <div class="navigation">
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <a href="bien.css" class="linkStyle1">voir plus...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="historique">
+        <h2>Historique</h2>
+        <div class="block">
+          <img src="img/historique/img1.webp" alt="image historique 1" />
+          <div class="text_container">
+            <h3>cacao le « Forastero » et le « Trinitario »</h3>
+            <p>
+              Nous sélectionnons soigneusement des matières premières
+              d'exception, notamment les variétés prestigieuses de cacao telles
+              que le « Forastero » et le « Trinitario ». Cesfèves, dotées
+              d'arômes puissants allant du floral au fruité, créent une palette
+              sensorielle unique. En collaborant avec des producteurs renommés,
+              tels que Pipiltin Cocoa en Indonésie, nous garantissons une
+              constance exceptionnelle dans la qualité de nos créations
+            </p>
+            <a href="" class="linkStyle1">voir plus...</a>
+          </div>
+        </div>
+        <div class="block inverse">
+          <img src="img/historique/img2.png" alt="image historique 1" />
+          <div class="text_container">
+            <h3>inauguration en janvier 2025</h3>
+            <p>
+              Située au cœur de Namur, Douceur d'Orient prévoit son inauguration
+              en janvier 2025, représentant fièrement l'artisanat belge dans
+              l'univers gourmand du chocolat. Grâce à notre plateforme en ligne,
+              nous rayonnons dans tout le pays, offrant nos créations
+              exceptionnelles au marché belge
+            </p>
+            <a href="" class="linkStyle1">voir plus...</a>
+          </div>
+        </div>
+        <div class="block">
+          <img src="img/historique/img3.jpg" alt="image historique 1" />
+          <div class="text_container">
+            <h3>ingrédients raffinés</h3>
+            <p>
+              Notre gamme exclusive de chocolats artisanaux se distingue par
+              l'utilisation ingénieuse d'ingrédients raffinés tels que citron,
+              rose, café, eau de rose et oranges. Ces saveurs uniques donnent
+              naissance à des pralinés innovants, tel que le Pistache et Rose,
+              offrant une expérience gustative hors du commun.
+            </p>
+            <a href="" class="linkStyle1">voir plus...</a>
+          </div>
+        </div>
+      </section>
+      <section id="galerie">
+        <h2>galerie</h2>
+        <div class="carousel">
+          <!-- list item -->
+          <div class="list">
+            <div class="item">
+              <img src="img/galerie/img1.jpg" alt="galerie" />
+              <div class="content">
+                <div class="author">Confiseries</div>
+                <div class="title">
+                  Barres de chocolat (noir, au lait, blanc)
+                </div>
+                <div class="topic">chocolat</div>
+                <div class="des">
+                  <!-- lorem 50 -->
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  sequi, rem magnam nesciunt minima placeat, itaque eum neque
+                  officiis unde, eaque optio ratione aliquid assumenda facere ab
+                  et quasi ducimus aut doloribus non numquam. Explicabo,
+                  laboriosam nisi reprehenderit tempora at laborum natus unde.
+                  Ut, exercitationem eum aperiam illo illum laudantium?
+                </div>
+                <div class="buttons">
+                  <button>SEE MORE</button>
+                  <button>SUBSCRIBE</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img2.jpg" alt="galerie" />
+              <div class="content">
+                <div class="author">gâteau</div>
+                <div class="title">Petit gâteau chocolaté</div>
+                <div class="topic">chocolat</div>
+                <div class="des">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  sequi, rem magnam nesciunt minima placeat, itaque eum neque
+                  officiis unde, eaque optio ratione aliquid assumenda facere ab
+                  et quasi ducimus aut doloribus non numquam. Explicabo,
+                  laboriosam nisi reprehenderit tempora at laborum natus unde.
+                  Ut, exercitationem eum aperiam illo illum laudantium?
+                </div>
+                <div class="buttons">
+                  <button>SEE MORE</button>
+                  <button>SUBSCRIBE</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img3.jpg" alt="galerie" />
+              <div class="content">
+                <div class="author">gâteau</div>
+                <div class="title">Gâteau pop</div>
+                <div class="topic">chocolat</div>
+                <div class="des">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  sequi, rem magnam nesciunt minima placeat, itaque eum neque
+                  officiis unde, eaque optio ratione aliquid assumenda facere ab
+                  et quasi ducimus aut doloribus non numquam. Explicabo,
+                  laboriosam nisi reprehenderit tempora at laborum natus unde.
+                  Ut, exercitationem eum aperiam illo illum laudantium?
+                </div>
+                <div class="buttons">
+                  <button>SEE MORE</button>
+                  <button>SUBSCRIBE</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img4.jpg" alt="galerie" />
+              <div class="content">
+                <div class="author">Confiseries</div>
+                <div class="title">des chocolats en Cœur</div>
+                <div class="topic">chocolat</div>
+                <div class="des">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  sequi, rem magnam nesciunt minima placeat, itaque eum neque
+                  officiis unde, eaque optio ratione aliquid assumenda facere ab
+                  et quasi ducimus aut doloribus non numquam. Explicabo,
+                  laboriosam nisi reprehenderit tempora at laborum natus unde.
+                  Ut, exercitationem eum aperiam illo illum laudantium?
+                </div>
+                <div class="buttons">
+                  <button>SEE MORE</button>
+                  <button>SUBSCRIBE</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img1.jpg" alt="galerie" />
+              <div class="content">
+                <div class="author">Confiseries</div>
+                <div class="title">
+                  Barres de chocolat (noir, au lait, blanc)
+                </div>
+                <div class="topic">chocolat</div>
+                <div class="des">
+                  <!-- lorem 50 -->
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  sequi, rem magnam nesciunt minima placeat, itaque eum neque
+                  officiis unde, eaque optio ratione aliquid assumenda facere ab
+                  et quasi ducimus aut doloribus non numquam. Explicabo,
+                  laboriosam nisi reprehenderit tempora at laborum natus unde.
+                  Ut, exercitationem eum aperiam illo illum laudantium?
+                </div>
+                <div class="buttons">
+                  <button>SEE MORE</button>
+                  <button>SUBSCRIBE</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img2.jpg" alt="galerie" />
+              <div class="content">
+                <div class="author">gâteau</div>
+                <div class="title">Petit gâteau chocolaté</div>
+                <div class="topic">chocolat</div>
+                <div class="des">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  sequi, rem magnam nesciunt minima placeat, itaque eum neque
+                  officiis unde, eaque optio ratione aliquid assumenda facere ab
+                  et quasi ducimus aut doloribus non numquam. Explicabo,
+                  laboriosam nisi reprehenderit tempora at laborum natus unde.
+                  Ut, exercitationem eum aperiam illo illum laudantium?
+                </div>
+                <div class="buttons">
+                  <button>SEE MORE</button>
+                  <button>SUBSCRIBE</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img3.jpg" alt="galerie" />
+              <div class="content">
+                <div class="author">gâteau</div>
+                <div class="title">gâteau pop</div>
+                <div class="topic">chocolat</div>
+                <div class="des">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  sequi, rem magnam nesciunt minima placeat, itaque eum neque
+                  officiis unde, eaque optio ratione aliquid assumenda facere ab
+                  et quasi ducimus aut doloribus non numquam. Explicabo,
+                  laboriosam nisi reprehenderit tempora at laborum natus unde.
+                  Ut, exercitationem eum aperiam illo illum laudantium?
+                </div>
+                <div class="buttons">
+                  <button>SEE MORE</button>
+                  <button>SUBSCRIBE</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img4.jpg" alt="galerie" />
+              <div class="content">
+                <div class="author">Confiseries</div>
+                <div class="title">des chocolats en Cœur</div>
+                <div class="topic">chocolat</div>
+                <div class="des">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                  sequi, rem magnam nesciunt minima placeat, itaque eum neque
+                  officiis unde, eaque optio ratione aliquid assumenda facere ab
+                  et quasi ducimus aut doloribus non numquam. Explicabo,
+                  laboriosam nisi reprehenderit tempora at laborum natus unde.
+                  Ut, exercitationem eum aperiam illo illum laudantium?
+                </div>
+                <div class="buttons">
+                  <button>SEE MORE</button>
+                  <button>SUBSCRIBE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div></div>
+          <!-- list thumnail -->
+          <div class="thumbnail">
+            <div class="item">
+              <img src="img/galerie/img1.jpg" alt="galerie" />
+              <div class="content">
+                <div class="title">Barres de chocolat</div>
+                <div class="description">Description</div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img2.jpg" alt="galerie" />
+              <div class="content">
+                <div class="title">Petit gâteau chocolaté</div>
+                <div class="description">Description</div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img3.jpg" alt="galerie" />
+              <div class="content">
+                <div class="title">gâteau pop</div>
+                <div class="description">Description</div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img4.jpg" alt="galerie" />
+              <div class="content">
+                <div class="title">des chocolats en Cœur</div>
+                <div class="description">Description</div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img1.jpg" alt="galerie" />
+              <div class="content">
+                <div class="title">Barres de chocolat</div>
+                <div class="description">Description</div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img2.jpg" alt="galerie" />
+              <div class="content">
+                <div class="title">Petit gâteau</div>
+                <div class="description">Description</div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img3.jpg" alt="galerie" />
+              <div class="content">
+                <div class="title">gâteau pop</div>
+                <div class="description">Description</div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/galerie/img4.jpg" alt="galerie" />
+              <div class="content">
+                <div class="title">chocolats en Cœur</div>
+                <div class="description">Description</div>
+              </div>
+            </div>
+          </div>
+          <!-- next prev -->
+          <div class="navigation">
+            <div class="arrows">
+              <button id="prev">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button id="next">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+            <a href="html/galerie.html" class="linkStyle1">voir plus...</a>
+          </div>
+          <!-- time running -->
+          <div class="time"></div>
+        </div>
+      </section>
+      <section id="contactUs">
+        <h2>nous contactez</h2>
+        <div class="FormAdress">
+          <form action="contact.php" method="post">
+            <h3>une question ?</h3>
+            <br />
+            <input type="text" name="name" placeholder="votre nom" /><br />
+            <input
+              type="email"
+              name="email"
+              placeholder="adresse@exemple.com"
+            /><br />
+            <textarea
+              name="message"
+              placeholder="votre message"
+              cols="30"
+              rows="3"
+            ></textarea
+            ><br />
+            <input type="submit" value="envoyez" />
+          </form>
+          <div class="adress">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.6732624998126!2d4.874989276438302!3d50.46580877159505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c199117927f9e9%3A0x4bdd76ab25cbfca4!2sPl.%20de%20l&#39;Ecole%20des%20Cadets%206%2Fa%2C%205000%20Namur!5e0!3m2!1sfr!2sbe!4v1710305779069!5m2!1sfr!2sbe"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <address>
+              Douceur d’Orient<br />
+              6 place de l’école des cadets à namur<br />
+              Tel: 081/22.22.22 <br />
+              Ouvert du lundi au samedi de 10h à 18h <br />
+              Email :
+              <a href="mailto:info@douceurdorient.be">info@douceurdorient.be</a>
+            </address>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="row primary">
+        <div class="column about">
+          <h3>douceur d'orient</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            voluptatem corporis error non,
+          </p>
+          <div class="social">
+            <a href="https://www.facebook.com/groups/271615090410801/"
+              ><i class="fa fa-facebook" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/dansmacuisinebelge?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a href="https://twitter.com/recettesde"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+            <a href="https://www.youtube.com/@Food_Story"
+              ><i class="fa fa-youtube-play" aria-hidden="true"></i
+            ></a>
+            <a href="https://wa.me/3281222222"
+              ><i class="fa fa-whatsapp" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="column links">
+          <h3>Some Links</h3>
+          <ul>
+            <li>
+              <a href="#faq">F.A.Q</a>
+            </li>
+            <li>
+              <a href="#cookies-policy">Cookies Policy</a>
+            </li>
+            <li>
+              <a href="#terms-of-services">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#support">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column links">
+          <h3>Some Links</h3>
+          <ul>
+            <li>
+              <a href="#faq">F.A.Q</a>
+            </li>
+            <li>
+              <a href="#cookies-policy">Cookies Policy</a>
+            </li>
+            <li>
+              <a href="#terms-of-services">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#support">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column subscribe">
+          <h3>Newsletter</h3>
+          <div>
+            <form action="newslatter.php" method="post">
+              <input
+                type="email"
+                name="newsletter"
+                placeholder="Inserez votre adresse mail"
+              />
+              <input type="submit" value="s'abonner" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row copyright">
+        <div class="footer-menu">
+          <a href="#">home</a>
+          <a href="#produits">nos nouveautés</a>
+          <a href="#historique">historique</a>
+          <a href="#galerie">gallerie</a>
+          <a href="#contactUs">nous contactez</a>
+        </div>
+        <p>Copyright &copy; 2021 Foolish Developer</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

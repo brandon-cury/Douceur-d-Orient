@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../faicon/apple-icon-72x72.png"
+      type="image/x-icon"
+    />
+    <title>Galerie Douceur d’Orient</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/galerie.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navPhone">
+          <div class="logoName">
+            <a href="../index.html">
+              <img src="../img/logo2.png" alt="logo" />
+              <strong>douceur d’orient</strong>
+            </a>
+          </div>
+          <label for="menu">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </label>
+          <input type="checkbox" id="menu" />
+          <div class="slide">
+            <div class="closeMenu">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <span class="MenuTitle">menu</span>
+            <ul>
+              <li>
+                <a href="../index.html"
+                  ><span class="icon"
+                    ><i class="fa fa-home" aria-hidden="true"></i
+                  ></span>
+                  <span class="name">accueil</span>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><span class="icon"
+                    ><i class="fa fa-user" aria-hidden="true"></i
+                  ></span>
+
+                  <span class="name">connexion</span>
+                </a>
+              </li>
+              <li onclick="newslatter(event)">
+                <a href=""
+                  ><span class="icon"
+                    ><i class="fa fa-envelope-o" aria-hidden="true"></i
+                  ></span>
+
+                  <span class="name">newsletter</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon"
+                    ><i class="fa fa-address-book" aria-hidden="true"></i
+                  ></span>
+                  <span class="name">contact</span>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><span class="icon"
+                    ><i class="fa fa-heart" aria-hidden="true"></i
+                  ></span>
+                  <span class="name">favories</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="active">
+                  <span class="name">chocolats</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="active">
+                  <span class="name">produits</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="" class="active">
+                  <span class="name">cadeaux</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="navPc">
+          <div class="menu1">
+            <div class="logoName">
+              <a href="../index.html">
+                <img src="../img/logo2.png" alt="logo" />
+                <strong>douceur d’orient</strong>
+              </a>
+            </div>
+            <ul class="ul1">
+              <li><a href="../index.html">accueil</a></li>
+              <li><a href="#">connexion</a></li>
+              <li onclick="newslatter(event)"><a href="#">newsletter</a></li>
+              <li><a href="#">contact</a></li>
+              <li><a href="#">favories</a></li>
+              <li>
+                chocolats
+                <ul class="ul2">
+                  <li>
+                    one
+                    <ul class="ul3">
+                      <li><a href="">one 1</a></li>
+                      <li><a href="">one 2</a></li>
+                      <li><a href="">one 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="">two</a>
+                    <ul class="ul3">
+                      <li>
+                        two 1
+                        <ul class="ul4">
+                          <li><a href="">two 11</a></li>
+                          <li><a href="">two 12</a></li>
+                          <li><a href="">two 13</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="">two 2</a></li>
+                      <li><a href="">two 3</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">tree</a>
+                    <ul class="ul3">
+                      <li><a href="">tree 1</a></li>
+                      <li><a href="">tree 2</a></li>
+                      <li><a href="">tree 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a href="">four</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">produits</a></li>
+
+              <li><a href="#">cadeaux</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="newslatterOverlay">
+        <div class="newslatterContentClose">
+          <i
+            class="fa fa-times-circle"
+            onclick="newslatter(event)"
+            aria-hidden="true"
+          ></i>
+          <div class="newslatterContent">
+            <h4>Enregistrement à la newsletter</h4>
+
+            <form action="newslatter.php" method="post">
+              <input
+                type="text"
+                name="newslatter"
+                placeholder="Votre adresse e-mail"
+              /><br />
+              <input type="submit" value="S'abonner" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="galerie">
+        <h2>galerie de produits</h2>
+        <div class="galerieProduct">
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/produits/produit1.jpg" alt="Produit 1" />
+              <div class="slide-content">
+                <span class="price">20 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">pralines</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/produits/produit2.jpg" alt="Produit 2" />
+              <div class="slide-content">
+                <span class="price">30 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">macarons</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/produits/produit3.jpg" alt="Produit 3" />
+              <div class="slide-content">
+                <span class="price">25 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">pâtes à tartiner</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/produits/produit4.jpg" alt="Produit 4" />
+              <div class="slide-content">
+                <span class="price">10 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">truffes au chocolat</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/produits/produit5.jpg" alt="Produit 5" />
+              <div class="slide-content">
+                <span class="price">20 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">la box</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/produits/produit6.jpg" alt="Produit 6" />
+              <div class="slide-content">
+                <span class="price">23 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">pralines</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/galerie/img1.jpg" alt="Produit 1" />
+              <div class="slide-content">
+                <span class="price">20 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">Barres de chocolat</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/galerie/img2.jpg" alt="Produit 2" />
+              <div class="slide-content">
+                <span class="price">30 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">Petit gâteau</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/galerie/img3.jpg" alt="Produit 3" />
+              <div class="slide-content">
+                <span class="price">25 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">gâteau pop</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/galerie/img4.jpg" alt="Produit 4" />
+              <div class="slide-content">
+                <span class="price">10 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">chocolats en cœur</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/produits/produit1.jpg" alt="Produit 1" />
+              <div class="slide-content">
+                <span class="price">20 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">pralines</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/produits/produit2.jpg" alt="Produit 2" />
+              <div class="slide-content">
+                <span class="price">30 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">macarons</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/produits/produit3.jpg" alt="Produit 3" />
+              <div class="slide-content">
+                <span class="price">25 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">pâtes à tartiner</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/produits/produit4.jpg" alt="Produit 4" />
+              <div class="slide-content">
+                <span class="price">10 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">truffes au chocolat</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/produits/produit5.jpg" alt="Produit 5" />
+              <div class="slide-content">
+                <span class="price">20 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">la box</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/produits/produit6.jpg" alt="Produit 6" />
+              <div class="slide-content">
+                <span class="price">23 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">pralines</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="slide">
+            <a href="https://lien1.com">
+              <img src="../img/galerie/img1.jpg" alt="Produit 1" />
+              <div class="slide-content">
+                <span class="price">20 €</span>
+                <div class="slide-content-bottom">
+                  <h3 class="name">Barres de chocolat</h3>
+                  <div class="slide-description">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laudantium, enim consectetur adipisicing elit. Laudantium,
+                      enim consectetur adipisicing elit. Laudantium, enim...
+                    </p>
+                    <div class="rating">
+                      <span>4.5</span>
+                      <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Slide-end -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="row primary">
+        <div class="column about">
+          <h3>douceur d'orient</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            voluptatem corporis error non,
+          </p>
+          <div class="social">
+            <a href="https://www.facebook.com/groups/271615090410801/"
+              ><i class="fa fa-facebook" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/dansmacuisinebelge?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a href="https://twitter.com/recettesde"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+            <a href="https://www.youtube.com/@Food_Story"
+              ><i class="fa fa-youtube-play" aria-hidden="true"></i
+            ></a>
+            <a href="https://wa.me/3281222222"
+              ><i class="fa fa-whatsapp" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="column links">
+          <h3>Some Links</h3>
+          <ul>
+            <li>
+              <a href="#faq">F.A.Q</a>
+            </li>
+            <li>
+              <a href="#cookies-policy">Cookies Policy</a>
+            </li>
+            <li>
+              <a href="#terms-of-services">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#support">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column links">
+          <h3>Some Links</h3>
+          <ul>
+            <li>
+              <a href="#faq">F.A.Q</a>
+            </li>
+            <li>
+              <a href="#cookies-policy">Cookies Policy</a>
+            </li>
+            <li>
+              <a href="#terms-of-services">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#support">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column subscribe">
+          <h3>Newsletter</h3>
+          <div>
+            <form action="newslatter.php" method="post">
+              <input
+                type="email"
+                name="newsletter"
+                placeholder="Inserez votre adresse mail"
+              />
+              <input type="submit" value="s'abonner" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row copyright">
+        <div class="footer-menu">
+          <a href="#">home</a>
+          <a href="#produits">nos nouveautés</a>
+          <a href="#historique">historique</a>
+          <a href="#galerie">gallerie</a>
+          <a href="#contactUs">nous contactez</a>
+        </div>
+        <p>Copyright &copy; 2021 Foolish Developer</p>
+      </div>
+    </footer>
+
+    <script src="../js/galerie.js"></script>
+  </body>
+</html>
